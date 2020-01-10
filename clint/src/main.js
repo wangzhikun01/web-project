@@ -5,6 +5,12 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+/**
+ *  导入所有的 API
+ */
+import api from "./api";
+Vue.prototype.$api = api;
+
 new Vue({
   router,
   store,
